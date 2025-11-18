@@ -4,22 +4,58 @@
     <meta charset="UTF-8">
     <title>Meu portifolio</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="style/global.css">
+    <link rel="stylesheet" href="style/variables.css">
     <style>
         .card-wrapper {
             display: flex;
             justify-content: center;
+            gap: 10%;
         }
         .hero {
             display: flex;
+            flex-direction: row;
+            justify-self: center;
+            gap: 30%;
+            padding: 0 10%;
+            margin: 10px 0;
+            width: 80%;
+            border-radius: 10px;
+        }
+        .text-hero {
+            display: flex;
             flex-direction: column;
-            align-items: center;
+            flex-wrap: wrap;
+            gap: 30px;
+            p {
+                width: 60%;
+                text-align: start;
+            }
         }
         .card-body {
-            background-color: var(--indigo-400);
+            background-color: var(--indigo-400) !important;
+            a {
+                border:solid 0.4px var(--vari-1) !important;
+                background: var(--vari-2);
+                border-radius: 15px;
+                color: var(--indigo-100);
+                padding: 5px 3px;
+            }
+            a:hover {
+                background-color: var(--indigo-500);
+            }
+        }
+        .line {
+            border: solid 0.2px var(--indigo-100);
+            width: 90%;
+            display: flex;
+            justify-self: center;
+
         }
     </style>
 </head>
-<body>
+<body class="bg-main">
+
 <nav class="navbar navbar-expand-lg bg-body-tertiary bg-indigo">
     <div class="container-fluid">
         <a class="navbar-brand" href="#">My portfolio</a>
@@ -28,41 +64,94 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
-                <li class="nav-item">
+                <li class="nav-item bg-primary">
                     <a class="nav-link active" aria-current="page" href="#">Home</a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item bg-primary">
                     <a class="nav-link" href="#">Projects</a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item bg-primary">
                     <a class="nav-link" href="#">About</a>
                 </li>
             </ul>
         </div>
     </div>
 </nav>
+    <div class="line"></div>
 
-<div class="hero">
+<main>
+<div class="hero bg-hero d-flex ">
+    <div class="text-hero">
     <h1>Vitor Alves</h1>
+        <p>
+            I'm Vitor Alves, i'm 18 years old.
+            I just leave high school and i'm studying systems analysis and development on Senai Suiço-Brasileiro, in Santo Amaro - SP.
+        </p>
+    </div>
     <img src="..." class="rounded mx-auto d-block" alt="...">
 </div>
-
 <div class="card-wrapper">
 <div class="card" style="width: 18rem;">
     <img src="assets/images/luna-screenshot.png" class="card-img-top" alt="...">
     <div class="card-body">
         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+        <a href="">View Project</a>
     </div>
 </div>
 <div class="card" style="width: 18rem;">
     <img src="assets/images/signin-signup-screenshot.png" class="card-img-top" alt="...">
     <div class="card-body">
         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+        <a href="">View Project</a>
     </div>
 </div>
 </div>
-
-
+</main>
+<div class="container">
+    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+        <div class="col-md-4 d-flex align-items-center">
+            <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1"
+               aria-label="Bootstrap">
+                <img src="./assets/images/logo.svg" alt="" width="70" height="70">
+            </a>
+            <span class="mb-3 mb-md-0 text-body-secondary"></span>
+        </div>
+        <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+            <li class="ms-3">
+                <a class="text-body-secondary" href="https://github.com/Vitor-Alves17" target="_blank"
+                   aria-label="Github">
+                    <svg height="24" aria-hidden="true" viewBox="0 0 24 24" version="1.1" width="24"
+                         data-view-component="true" class="octicon octicon-mark-github v-align-middle">
+                        <path
+                                d="M12 1C5.923 1 1
+                                5.923 1 12c0 4.867 3.149 8.979
+                                7.521 10.436.55.096.756-.233.756-.522
+                                0-.262-.013-1.128-.013-2.049-2.764.509-3.479-.674-3.699-1.292-.124-.317-.66-1.293-1.127-1.554-.385-.207-.936-.715-.014-.729.866-.014
+                                1.485.797 1.691 1.128.99 1.663 2.571 1.196 3.204.907.096-.715.385-1.196.701-1.471-2.448-.275-5.005-1.224-5.005-5.432 0-1.196.426-2.186
+                                1.128-2.956-.111-.275-.496-1.402.11-2.915 0 0 .921-.288 3.024 1.128a10.193 10.193 0 0 1 2.75-.371c.936 0 1.871.123
+                                2.75.371 2.104-1.43 3.025-1.128 3.025-1.128.605 1.513.221 2.64.111 2.915.701.77 1.127 1.747 1.127 2.956 0 4.222-2.571 5.157-5.019
+                                5.432.399.344.743 1.004.743 2.035 0 1.471-.014 2.654-.014 3.025 0 .289.206.632.756.522C19.851 20.979 23 16.854 23 12c0-6.077-4.922-11-11-11Z">
+                        </path>
+                    </svg>
+                </a>
+            </li>
+            <li class="ms-3">
+                <a class="text-body-secondary" href="https://www.linkedin.com/in/"
+                   target="_blank" aria-label="Linkedin">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps="24x24"
+                         fill="#0a66c2" class="mercado-match" width="24" height="24" focusable="false">
+                        <path d="M20.5 2h-17A1.5 1.5 0 002 3.5v17A1.5 1.5 0 003.5 22h17a1.5
+                                1.5 0 001.5-1.5v-17A1.5 1.5 0 0020.5 2zM8 19H5v-9h3zM6.5
+                                8.25A1.75 1.75 0 118.3 6.5a1.78 1.78 0 01-1.8 1.75zM19
+                                19h-3v-4.74c0-1.42-.6-1.93-1.38-1.93A1.74 1.74 0 0013 14.19a.66.66 0 000
+                                .14V19h-3v-9h2.9v1.3a3.11 3.11 0 012.7-1.4c1.55 0 3.36.86 3.36 3.66z">
+                        </path>
+                    </svg>
+                </a>
+            </li>
+        </ul>
+    </footer>
+</div>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </body>
 </html>

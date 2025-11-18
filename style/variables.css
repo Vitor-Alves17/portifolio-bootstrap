@@ -7,5 +7,27 @@
     --indigo-400: #8348e0;
     --indigo-300: #ac87e7;
     --indigo-200: #c0b6d2;
-    --indigo-100: #f1f0f6;
+    --indigo-100: #dad1ee;
+
+    --vari-1: #D95B9E;
+    --vari-2: #D05BD9;
+    --vari-3: #7D5BD9;
+    --vari-4: #5B62D9;
+    --vari-main: #A65BD9;
+}
+.bg-indigo {
+    background: var(--indigo-300) !important;
+    color: var(--indigo-200) !important;
+}
+.bg-primary {
+    background: var(--indigo-300) !important;
+}
+.bg-100 {
+    background: var(--indigo-100) !important;
+}
+.bg-main {
+    background: var(--indigo-300);
+}
+.bg-hero {
+    background: var(--indigo-100);
 }
