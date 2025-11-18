@@ -29,7 +29,7 @@
     background: var(--indigo-100) !important;
 }
 .bg-main {
-    background: var(--black);
+    background: var(--indigo-300);
 }
 .bg-hero {
     background: var(--indigo-100);
