@@ -9,6 +9,9 @@
     --indigo-200: #c0b6d2;
     --indigo-100: #dad1ee;
 
+    --neutral: #Ffffff;
+    --black: #000000;
+
     --vari-1: #D95B9E;
     --vari-2: #D05BD9;
     --vari-3: #7D5BD9;
@@ -26,7 +29,7 @@
     background: var(--indigo-100) !important;
 }
 .bg-main {
-    background: var(--indigo-300);
+    background: var(--black);
 }
 .bg-hero {
     background: var(--indigo-100);
