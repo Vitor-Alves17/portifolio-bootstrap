@@ -19,7 +19,7 @@
     --vari-main: #A65BD9;
 }
 .bg-indigo {
-    background: var(--black) !important;
+    background: var(--indigo-300) !important;
     color: var(--indigo-200) !important;
 }
 .bg-primary {
