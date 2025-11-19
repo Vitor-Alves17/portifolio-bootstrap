@@ -19,11 +19,11 @@
     --vari-main: #A65BD9;
 }
 .bg-indigo {
-    background: var(--indigo-300) !important;
+    background: var(--indigo-100) !important;
     color: var(--indigo-200) !important;
 }
 .bg-primary {
-    background: var(--indigo-300) !important;
+    background: var(--indigo-100) !important;
 }
 .bg-100 {
     background: var(--indigo-100) !important;
